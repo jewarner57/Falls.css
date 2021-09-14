@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+:root {
+--font-family: 'Ubuntu', sans-serif;;
+--bg-color: /* your background color */;
+--fg-color: /* Your foreground color */;
+--color-primary: /* */;
+--color-success: /* */;
+--color-danger: /* */;
+--color-primary: /* */;
+--color-dark: /* */;
+--color-light: /* */;
+}
+
+* {
+  font-family: var(--font-family);
+}
