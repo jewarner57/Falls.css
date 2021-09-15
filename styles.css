@@ -3,14 +3,19 @@
 /* Color and font config */
 :root {
 --font-family: 'Ubuntu', sans-serif;
+
 --color-primary: #4c7aaf;
 --color-primary-dark: #314f72;
+
 --color-success: #6da86d;
 --color-success-dark: #518151;
+
 --color-danger: #ca4747;
 --color-danger-dark: #9b3636;
+
 --color-dark: #343a40;
---color-light: whitesmoke;
+--color-light: rgb(172, 172, 172);
+
 --text-light: whitesmoke;
 --text-dark: #242424;
 }
@@ -28,7 +33,7 @@ button {
     background-color: var(--bg-color);
     padding: 10px 20px;
     text-align: center;
-    color: whitesmoke;
+    color: var(--text-color);
     border-radius: 10px;
     font-size: 1rem;
     cursor: pointer;
@@ -38,8 +43,12 @@ button {
     border-bottom: 4px solid var(--border-color);
 }
 
-button:hover {
-    color: whitesmoke;
+button.text-dark {
+  --text-color: var(--text-dark)
+}
+
+button:hover:not(.disabled) {
+    color: var(--text-color);
     box-shadow: inset 0 0 8px #000000;
     border: none;
     padding: 12px 20px;
@@ -54,3 +63,45 @@ button:hover {
   --bg-color: var(--color-danger);
   --border-color: var(--color-danger-dark);
 }
+
+.disabled {
+  --bg-color: var(--color-light);
+  --border-color: var(--color-light);
+}
+
+/* links, anchor tags */
+a {
+  --text-color: var(--text-light);
+  --visited-color: var(--color-primary);
+
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+a.text-dark {
+  --text-color: var(--text-dark);
+  --visited-color: var(--color-primary-dark);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Padding */
+
+.p-1 {
+  padding: 1em;
+}
+
+.p-2 {
+  padding: 2em;
+}
+
+.p-3 {
+  padding: 3em;
+}
+
+.p-4 {
+  padding: 4em;
+}
+
