@@ -25,6 +25,10 @@
 }
 
 /* Headers */
+.h-thin {
+  font-weight: 300;
+}
+
 h1 {
   font-size: 4.5em;
 }
