@@ -27,6 +27,10 @@
 --text-dark: #242424;
 }
 
+.invert {
+  color: var(--background-color);
+}
+
 /* Body */
 body {
   margin: 0;
@@ -171,4 +175,6 @@ pre {
   border: none;
   font-family: monospace;
   background-color: var(--color-light);
+  tab-size: 2;
+  white-space: pre-wrap;  
 }
