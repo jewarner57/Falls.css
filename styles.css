@@ -4,11 +4,17 @@
 :root {
 --font-family: 'Ubuntu', sans-serif;
 
+--background-color: #fff;
+--foreground-color: #242424;
+
 --color-primary: #4c7aaf;
 --color-primary-dark: #314f72;
 
 --color-success: #6da86d;
 --color-success-dark: #518151;
+
+--color-info: #F0AD4E;
+--color-info-dark: #c78f40;
 
 --color-danger: #ca4747;
 --color-danger-dark: #9b3636;
@@ -20,17 +26,36 @@
 --text-dark: #242424;
 }
 
-* {
+/* Body */
+body {
+  margin: 0;
+  padding: 0;
   font-family: var(--font-family);
+  background-color: var(--background-color);
 }
+
+/* Page */
+.page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+  box-shadow: 1px 1px 15px 2px var(--foreground-color);
+}
+
 
 /* Headers */
 .h-thin {
   font-weight: 300;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 2rem 0;
+}
+
 h1 {
-  font-size: 4.5em;
+  font-size: 4em;
 }
 
 h2 {
@@ -76,45 +101,48 @@ button.text-dark {
   --text-color: var(--text-dark)
 }
 
-button:hover:not(.disabled) {
+button:hover:not(.btn-disabled) {
     color: var(--text-color);
     box-shadow: inset 0 0 8px #000000;
     border: none;
     padding: 12px 20px;
 }
 
-.success {
+.btn-success {
   --bg-color: var(--color-success);
   --border-color: var(--color-success-dark);
 }
 
-.danger {
+.btn-danger {
   --bg-color: var(--color-danger);
   --border-color: var(--color-danger-dark);
+  font-weight: bold;
 }
 
-.disabled {
+.btn-info {
+  --bg-color: var(--color-info);
+  --border-color: var(--color-info-dark);
+}
+
+.btn-disabled {
   --bg-color: var(--color-light);
   --border-color: var(--color-light);
 }
 
 /* links, anchor tags */
 a {
-  --text-color: var(--text-light);
-  --hover-color: var(--color-primary);
+  --text-color: var(--color-primary-dark);
 
   color: var(--text-color);
   text-decoration: none;
 }
 
-a.text-dark {
-  --text-color: var(--text-dark);
-  --hover-color: var(--color-primary-dark);
+a.text-light {
+  --text-color: var(--text-primary-light);
 }
 
 a:hover {
   text-decoration: underline;
-  color: var(--hover-color);
 }
 
 /* Padding */
