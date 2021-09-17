@@ -20,7 +20,8 @@
 --color-danger-dark: #9b3636;
 
 --color-dark: #343a40;
---color-light: rgb(172, 172, 172);
+--color-light: rgb(211, 211, 211);
+--color-md-light: rgb(172, 172, 172);
 
 --text-light: whitesmoke;
 --text-dark: #242424;
@@ -163,3 +164,11 @@ a:hover {
   padding: 4em;
 }
 
+/* Code tag */
+pre {
+  padding-top: 10px;
+  padding-left: 20px;
+  border: none;
+  font-family: monospace;
+  background-color: var(--color-light);
+}
