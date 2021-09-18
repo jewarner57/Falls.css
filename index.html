@@ -36,7 +36,7 @@
     <!-- --------------------------- -->
     <!-- Headings -->
     <section id="headings">
-      <h1>Headings</h1>
+      <h1>Headings:</h1>
       <h1>H1 Heading</h1>
       <h2>H2 Heading</h2>
       <h3>H3 Heading</h3>
@@ -160,30 +160,28 @@ href=&quot;#&quot;&gt;links&lt;/a&gt; to show off their styles in context.&lt;/p
           <textarea placeholder="Your comment"></textarea>
         </label>
 
-        <!-- Switch with Click -->
-        <div>
-          <label id="switch-2" class="switch-2">
-            <input type="checkbox">
-            <div>
-              <div></div>
-            </div>
-          </label>
-          <span>Click Switch no JS</span>
-        </div>
+        <h3>Checkboxes</h3>
 
-        <label class="control-checkbox">One
-          <input type="checkbox" checked="checked">
-          <span></span>
-        </label>
+        <!-- Checkbox -->
+        <div class="flex align-center">
+          <label for="checkbox">Here is a custom checkbox</label>
+          <label class="fl-checkbox">
+            <input id="checkbox" type="checkbox" />
+            <span></span>
+          </label>
+        </div>
       </form>
 
-      <h3>Input and label</h3>
+
       <pre>
 				<code class="prettyprint">
-&lt;label&gt;
-&#x9;&lt;span&gt;Text:&lt;/span&gt;
-&#x9;&lt;input type=&quot;text&quot; placeholder=&quot;What is your name?&quot;&gt;
-&lt;/label&gt;
+&lt;div class="flex align-center"&gt;
+  &lt;label for="MyCheckbox"&gt;Here is a custom checkbox&lt;/label&gt;
+  &lt;label class="fl-checkbox" id="MyCheckbox"&gt;
+    &lt;input type="checkbox"/&gt;
+    &lt;span&gt;&lt;/span&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
 				</code>
 			</pre>
 
