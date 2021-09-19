@@ -27,6 +27,10 @@
 --text-dark: #242424;
 }
 
+.color-grid > div {
+  padding: 20px;
+}
+
 /* Body */
 body {
   margin: 0;
@@ -296,8 +300,8 @@ pre {
   list-style-type: none;
   margin: 0;
   padding: 0;
-
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
 }
@@ -305,6 +309,7 @@ pre {
 .navbar {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   background-color: var(--background-color);
   padding: 10px 20px;
 }
@@ -338,6 +343,44 @@ pre {
 .nav-light > ul > li > a {
   color: var(--text-dark);
 }
+
+/* Footer */
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: var(--background-color);
+  padding: 10px 100px;
+}
+
+.page-footer > ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.page-footer > ul > li > * {
+  color: var(--foreground-color);
+}
+
+.foot-dark {
+  background-color: var(--color-dark);
+  color: var(--text-light);
+}
+
+.foot-dark > ul > li > a {
+  color: var(--text-light);
+}
+
+.foot-light {
+  background-color: var(--color-light);
+  color: var(--text-dark);
+}
+
+.foot-light > ul > li > a {
+  color: var(--text-dark);
+}
+
 
 /* Flexbox */
 .flex {
