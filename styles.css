@@ -365,10 +365,13 @@ pre {
 
 .foot-dark {
   background-color: var(--color-dark);
+}
+
+.foot-dark > * {
   color: var(--text-light);
 }
 
-.foot-dark > ul > li > a {
+.foot-dark > ul > li > * {
   color: var(--text-light);
 }
 
@@ -377,7 +380,7 @@ pre {
   color: var(--text-dark);
 }
 
-.foot-light > ul > li > a {
+.foot-light > ul > li > * {
   color: var(--text-dark);
 }
 
