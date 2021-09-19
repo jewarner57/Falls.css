@@ -9,11 +9,9 @@
 
 <body class="dark">
   <!-- Page Navigation -->
-  <div class="navbar">
+  <div class="navbar nav-light">
+    <h1 class="title">Falls.css</h1>
     <ul>
-      <li>
-        <h1 class="title">Falls.css</h1>
-      </li>
       <!-- <li><a href="#colors">Colors</a></li> -->
       <li><a href="#navbar">Navbar</a></li>
       <li><a href="#headings">Headings</a></li>
@@ -31,7 +29,7 @@
   </div>
 
   <!-- main content -->
-  <div class="container page">
+  <div class="container page my-2">
 
     <!-- --------------------------- -->
     <!-- Headings -->
@@ -160,7 +158,14 @@ href=&quot;#&quot;&gt;links&lt;/a&gt; to show off their styles in context.&lt;/p
           <textarea placeholder="Your comment"></textarea>
         </label>
 
-        <h3>Checkboxes</h3>
+        <pre>
+          <code class="prettyprint">
+&lt;input /&gt;
+          </code>
+        </pre>
+
+
+        <h3>Theme Checkbox</h3>
 
         <!-- Checkbox -->
         <div class="flex align-center">
@@ -185,16 +190,23 @@ href=&quot;#&quot;&gt;links&lt;/a&gt; to show off their styles in context.&lt;/p
 				</code>
 			</pre>
 
-      <h3>Checkbox and label</h3>
-      <pre>
-				<code class="prettyprint">
-&lt;label class=&quot;control-checkbox&quot;&gt;One
-&#x9;&lt;input type=&quot;checkbox&quot; checked=&quot;checked&quot;&gt;
-&#x9;&lt;span&gt;&lt;/span&gt;
-&lt;/label&gt;
-				</code>
-						</pre>
+      <h3>Theme Slider</h3>
 
+      <!-- Slider -->
+      <label for="custom-slider">Slider from 10 to 200:</label>
+      <div>
+        <input type="range" min="10" max="200" value="100" class="slider" id="custom-slider">
+      </div>
+
+
+      <pre>
+        <code class="prettyprint">
+&lt;label for="custom-slider"&gt;Slider from 10 to 200:&lt;/label&gt;
+&lt;div&gt;
+  &lt;input type="range" min="10" max="200" value="100" class="slider" id="custom-slider"&gt;
+&lt;/div&gt;
+        </code>
+      </pre>
     </section>
 
     <!-- --------------------------- -->
@@ -229,17 +241,33 @@ href=&quot;#&quot;&gt;links&lt;/a&gt; to show off their styles in context.&lt;/p
     <!-- --------------------------- -->
     <!-- Nav Bar styles -->
     <section id="navbar">
-      <h1>Navbar</h1>
+      <h1>Navbars</h1>
+      <p>A navbar with a title and elements on the right</p>
+      <p>Use a title element and one or more lists in the <code>div.navbar</code>.</p>
 
-      <h2>Navbar 1</h2>
-      <p>A navbar with all elements on the left.</p>
-      <p>Use a single child under <code>div.navbar</code>.</p>
-
-      <div class="navbar">
+      <div class="navbar my-1">
+        <h3 class="title">Default</h3>
         <ul>
-          <li>
-            <h1 class="title">TITLE</h1>
-          </li>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+        </ul>
+      </div>
+
+      <div class="navbar nav-light my-1">
+        <h3 class="title">Light</h3>
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+        </ul>
+      </div>
+
+      <div class="navbar nav-dark my-1">
+        <h3 class="title">Dark</h3>
+        <ul>
           <li><a href="#">Link 1</a></li>
           <li><a href="#">Link 2</a></li>
           <li><a href="#">Link 3</a></li>
@@ -251,16 +279,118 @@ href=&quot;#&quot;&gt;links&lt;/a&gt; to show off their styles in context.&lt;/p
         <pre class="code-block">
 					<code class="prettyprint">
 &lt;div class=&quot;navbar&quot;&gt;
+  &lt;h1 class=&quot;title&quot;&gt;Default&lt;/h1&gt;
 	&lt;ul&gt;
-		&lt;li&gt;&lt;h1 class=&quot;title&quot;&gt;TITLE&lt;/h1&gt;&lt;/li&gt;
 		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;
 		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;
 		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 3&lt;/a&gt;&lt;/li&gt;
 		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 4&lt;/a&gt;&lt;/li&gt;
 	&lt;/ul&gt;
 &lt;/div&gt;
+
+&lt;div class=&quot;navbar nav-light&quot;&gt;
+  &lt;h1 class=&quot;title&quot;&gt;Light&lt;/h1&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 4&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;navbar nav-dark&quot;&gt;
+  &lt;h1 class=&quot;title&quot;&gt;Dark&lt;/h1&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 4&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
 					</code>
 				</pre>
+      </div>
+
+      <h1>Navbar Contents</h1>
+      <p>You can change the order of a div.navbar's child elements to get different navbar configurations.</p>
+
+      <div class="navbar nav-light my-1">
+        <h3 class="title">Left</h3>
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+        </ul>
+      </div>
+
+      <div class="navbar nav-light my-1">
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+        </ul>
+        <h3 class="title">Right</h3>
+      </div>
+
+      <div class="navbar nav-light my-1">
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+        </ul>
+        <h3 class="title">Centered</h3>
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <pre class="code-block">
+      					<code class="prettyprint">
+
+&lt;div class=&quot;navbar nav-dark&quot;&gt;
+  &lt;h1 class=&quot;title&quot;&gt;Left&lt;/h1&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 4&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;navbar nav-light&quot;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 4&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;h1 class=&quot;title&quot;&gt;Right&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;navbar&quot;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 4&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;h1 class=&quot;title&quot;&gt;Centered&lt;/h1&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 4&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+      					</code>
+      				</pre>
       </div>
 
     </section>
