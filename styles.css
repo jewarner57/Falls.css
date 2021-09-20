@@ -214,31 +214,25 @@ pre {
 }
 
 /* Input */
-input {
-  padding: 7px 10px;
-  border-radius: 4px;
-  border: 1px solid var(--color-light);
-  font-size: 0.9rem;
-  margin: 10px;
-}
 
-.form-control {
+.form-area {
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-textarea {
+.form-control {
   font-family: var(--font-family);
-  resize: none;
-  padding: 10px;
-  border: 1px solid var(--color-light);
+  padding: 7px 10px;
   border-radius: 4px;
+  border: 1px solid var(--color-light);
+  font-size: 0.9rem;
   margin: 10px;
+  resize: none;
 }
 
-label {
+.wrap-label {
   display: flex;
   flex-direction: row;
   align-items: center;

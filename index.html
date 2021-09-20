@@ -137,38 +137,80 @@ href=&quot;#&quot;&gt;links&lt;/a&gt; to show off their styles in context.&lt;/p
     <!-- Form Styles -->
     <section>
       <h2>Forms and controls</h2>
-      <form class="form-control">
-        <label>
+      <form class="form-area">
+        <label class="wrap-label">
           <span>Text:</span>
-          <input type="text" placeholder="What is your name?">
+          <input class="form-control" type="text" placeholder="What is your name?">
         </label>
 
-        <label>
+        <label class="wrap-label">
           <span>Email:</span>
-          <input type="email" placeholder="What is your name?">
+          <input class="form-control" type="email" placeholder="What is your name?">
         </label>
 
-        <label>
+        <label class="wrap-label">
           <span>Password:</span>
-          <input type="password" placeholder="What is your name?">
+          <input class="form-control" type="password" placeholder="What is your name?">
         </label>
 
-        <label>
+        <label class="wrap-label">
           <span>Your comments:</span>
-          <textarea placeholder="Your comment"></textarea>
+          <textarea class="form-control" placeholder="Your comment"></textarea>
+        </label>
+
+        <label class="wrap-label">
+          <span>Select: </span>
+          <select class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
         </label>
       </form>
 
       <pre>
           <code class="prettyprint">
-&lt;input /&gt;
+&lt;form class=&quot;form-area&quot;&gt;
+  &lt;label class=&quot;wrap-label&quot;&gt;
+    &lt;span&gt;Text:&lt;/span&gt;
+    &lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;What is your name?&quot;&gt;
+  &lt;/label&gt;
+
+  &lt;label class=&quot;wrap-label&quot;&gt;
+    &lt;span&gt;Email:&lt;/span&gt;
+    &lt;input class=&quot;form-control&quot; type=&quot;email&quot; placeholder=&quot;What is your name?&quot;&gt;
+  &lt;/label&gt;
+
+  &lt;label class=&quot;wrap-label&quot;&gt;
+    &lt;span&gt;Password:&lt;/span&gt;
+    &lt;input class=&quot;form-control&quot; type=&quot;password&quot; placeholder=&quot;What is your name?&quot;&gt;
+  &lt;/label&gt;
+
+  &lt;label class=&quot;wrap-label&quot;&gt;
+    &lt;span&gt;Your comments:&lt;/span&gt;
+    &lt;textarea class=&quot;form-control&quot; placeholder=&quot;Your comment&quot;&gt;&lt;/textarea&gt;
+  &lt;/label&gt;
+
+  &lt;label class=&quot;wrap-label&quot;&gt;
+    &lt;span&gt;Select: &lt;/span&gt;
+    &lt;select class=&quot;form-control&quot;&gt;
+      &lt;option&gt;1&lt;/option&gt;
+      &lt;option&gt;2&lt;/option&gt;
+      &lt;option&gt;3&lt;/option&gt;
+      &lt;option&gt;4&lt;/option&gt;
+      &lt;option&gt;5&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/label&gt;
+&lt;/form&gt;
           </code>
         </pre>
 
 
       <h3>Theme Checkbox</h3>
 
-      <form class="form-control">
+      <form class="form-area">
         <!-- Checkbox -->
         <div class="flex align-center">
           <label for="checkbox">Here is a custom checkbox</label>
