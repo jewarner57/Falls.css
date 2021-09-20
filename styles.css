@@ -213,6 +213,37 @@ pre {
   white-space: pre-wrap;  
 }
 
+/* Input */
+input {
+  padding: 7px 10px;
+  border-radius: 4px;
+  border: 1px solid var(--color-light);
+  font-size: 0.9rem;
+  margin: 10px;
+}
+
+.form-control {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+textarea {
+  font-family: var(--font-family);
+  resize: none;
+  padding: 10px;
+  border: 1px solid var(--color-light);
+  border-radius: 4px;
+  margin: 10px;
+}
+
+label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 /* Checkbox */
 .fl-checkbox {
     display: inline-flex;
@@ -229,6 +260,7 @@ pre {
     height: 27px;
     width: 25px;
     padding: 0 13px;
+    margin: 10px;
     -webkit-appearance: none;
     -moz-appearance: none;
     -o-appearance: none;
@@ -252,8 +284,8 @@ pre {
     text-align: center;
     color: var(--text-light);
     position: absolute;
-    left: 0.7rem;
-    top: 0.2rem;
+    left: 1rem;
+    top: 0.6rem;
 }
 
 .fl-checkbox > input:active {
