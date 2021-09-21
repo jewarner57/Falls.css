@@ -228,14 +228,8 @@ pre {
   border-radius: 4px;
   border: 1px solid var(--color-light);
   font-size: 0.9rem;
-  margin: 10px;
+  margin: 5px 0 20px 0;
   resize: none;
-}
-
-.wrap-label {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 
 /* Checkbox */
