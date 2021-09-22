@@ -138,24 +138,24 @@ href=&quot;#&quot;&gt;links&lt;/a&gt; to show off their styles in context.&lt;/p
     <section id="forms">
       <h2>Forms and controls</h2>
       <form class="form-area">
-        <label class="wrap-label">Text: </label>
-        <input class="form-control" type="text" placeholder="What is your name?">
+        <label for="name">Text: </label>
+        <input id="name" class="form-control" type="text" placeholder="What is your name?">
 
 
-        <label class="wrap-label">Email:</label>
-        <input class="form-control" type="email" placeholder="What is your name?">
+        <label for="email">Email:</label>
+        <input id="email" class="form-control" type="email" placeholder="What is your name?">
 
 
-        <label class="wrap-label">Password:</label>
-        <input class="form-control" type="password" placeholder="What is your name?">
+        <label for="password">Password:</label>
+        <input id="password" class="form-control" type="password" placeholder="What is your name?">
 
 
-        <label class="wrap-label">Your Comments:</label>
-        <textarea class="form-control" placeholder="Your comment"></textarea>
+        <label for="textArea">Your Comments:</label>
+        <textarea id="textArea" class="form-control" placeholder="Your comment"></textarea>
 
 
-        <label class="wrap-label">Select</label>
-        <select class="form-control">
+        <label for="select">Select</label>
+        <select id="select" class="form-control">
           <option>1</option>
           <option>2</option>
           <option>3</option>
@@ -163,40 +163,49 @@ href=&quot;#&quot;&gt;links&lt;/a&gt; to show off their styles in context.&lt;/p
           <option>5</option>
         </select>
 
+
+        <label>
+          <input type="radio">
+          Radio
+        </label>
       </form>
 
       <pre>
           <code class="prettyprint">
 &lt;form class=&quot;form-area&quot;&gt;
-  &lt;label class=&quot;wrap-label&quot;&gt;
-    &lt;span&gt;Text:&lt;/span&gt;
-    &lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;What is your name?&quot;&gt;
-  &lt;/label&gt;
-
-  &lt;label class=&quot;wrap-label&quot;&gt;
-    &lt;span&gt;Email:&lt;/span&gt;
-    &lt;input class=&quot;form-control&quot; type=&quot;email&quot; placeholder=&quot;What is your name?&quot;&gt;
-  &lt;/label&gt;
-
-  &lt;label class=&quot;wrap-label&quot;&gt;
-    &lt;span&gt;Password:&lt;/span&gt;
-    &lt;input class=&quot;form-control&quot; type=&quot;password&quot; placeholder=&quot;What is your name?&quot;&gt;
-  &lt;/label&gt;
-
-  &lt;label class=&quot;wrap-label&quot;&gt;
-    &lt;span&gt;Your comments:&lt;/span&gt;
-    &lt;textarea class=&quot;form-control&quot; placeholder=&quot;Your comment&quot;&gt;&lt;/textarea&gt;
-  &lt;/label&gt;
-
-  &lt;label class=&quot;wrap-label&quot;&gt;
-    &lt;span&gt;Select: &lt;/span&gt;
-    &lt;select class=&quot;form-control&quot;&gt;
-      &lt;option&gt;1&lt;/option&gt;
-      &lt;option&gt;2&lt;/option&gt;
-      &lt;option&gt;3&lt;/option&gt;
-      &lt;option&gt;4&lt;/option&gt;
-      &lt;option&gt;5&lt;/option&gt;
-    &lt;/select&gt;
+  &lt;label for=&quot;name&quot;&gt;Text: &lt;/label&gt;
+  &lt;input id=&quot;name&quot; class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;What is your
+  name?&quot;&gt;
+  
+  
+  &lt;label for=&quot;email&quot;&gt;Email:&lt;/label&gt;
+  &lt;input id=&quot;email&quot; class=&quot;form-control&quot; type=&quot;email&quot; placeholder=&quot;What is your
+  name?&quot;&gt;
+  
+  
+  &lt;label for=&quot;password&quot;&gt;Password:&lt;/label&gt;
+  &lt;input id=&quot;password&quot; class=&quot;form-control&quot; type=&quot;password&quot; placeholder=&quot;What is
+  your name?&quot;&gt;
+  
+  
+  &lt;label for=&quot;textArea&quot;&gt;Your Comments:&lt;/label&gt;
+  &lt;textarea id=&quot;textArea&quot; class=&quot;form-control&quot; placeholder=&quot;Your
+  comment&quot;&gt;&lt;/textarea&gt;
+  
+  
+  &lt;label for=&quot;select&quot;&gt;Select&lt;/label&gt;
+  &lt;select id=&quot;select&quot; class=&quot;form-control&quot;&gt;
+    &lt;option&gt;1&lt;/option&gt;
+    &lt;option&gt;2&lt;/option&gt;
+    &lt;option&gt;3&lt;/option&gt;
+    &lt;option&gt;4&lt;/option&gt;
+    &lt;option&gt;5&lt;/option&gt;
+  &lt;/select&gt;
+  
+  
+  &lt;label&gt;
+  &lt;input type=&quot;radio&quot;&gt;
+  Radio
   &lt;/label&gt;
 &lt;/form&gt;
           </code>
