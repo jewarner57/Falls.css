@@ -46,7 +46,7 @@ body {
   padding: 50px;
   background-color: var(--background-color);
   color: var(--foreground-color);
-  box-shadow: 1px 1px 15px 2px var(--foreground-color);
+  box-shadow: 7px 7px 15px 0px var(--color-md-light);
 }
 
 
@@ -224,10 +224,10 @@ pre {
 
 .form-control {
   font-family: var(--font-family);
-  padding: 7px 10px;
+  padding: 10px 10px;
   border-radius: 4px;
   border: 1px solid var(--color-light);
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin: 5px 0 20px 0;
   resize: none;
 }

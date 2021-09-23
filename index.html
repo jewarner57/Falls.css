@@ -7,7 +7,7 @@
 </head>
 <!-- Page Wraper -->
 
-<body class="dark">
+<body class="dark" style="background-color: rgb(238, 238, 238);">
   <!-- Page Navigation -->
   <div class="navbar nav-light">
     <h1 class="title">Falls.css</h1>
@@ -89,9 +89,6 @@
 &lt;button&gt;Submit&lt;/button&gt;
 				</code>
 			</pre>
-
-      <p>This button has consequences. You might want to think twice before clicking.</p>
-      <p>Custimize buttons by adding CSS variables inline or with a class.</p>
       <p>
         <button class="btn-danger">Delete</button>
         <button class="btn-success">Go!</button>
@@ -137,6 +134,8 @@ href=&quot;#&quot;&gt;links&lt;/a&gt; to show off their styles in context.&lt;/p
     <!-- Form Styles -->
     <section id="forms">
       <h2>Forms and controls</h2>
+      <p>Use the <u>form-area</u> class to style form elements</p>
+      <p>Use the <u>form-control</u> class to style text input elements</p>
       <form class="form-area">
         <label for="name">Text: </label>
         <input id="name" class="form-control" type="text" placeholder="What is your name?">
@@ -219,7 +218,7 @@ href=&quot;#&quot;&gt;links&lt;/a&gt; to show off their styles in context.&lt;/p
         <div class="flex align-center">
           <label for="checkbox">Here is a custom checkbox</label>
           <label class="fl-checkbox">
-            <input id="checkbox" type="checkbox" />
+            <input id="checkbox" type="checkbox" checked />
             <span></span>
           </label>
         </div>
