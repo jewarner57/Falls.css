@@ -134,6 +134,47 @@ button:hover:not(.btn-disabled) {
   --border-color: var(--color-light);
 }
 
+/* Loading Bars */
+.loading-bar {
+  background: linear-gradient(-45deg, var(--color-primary), var(--background-color));
+  background-size: 400% 400%;
+  background-position: 200% 0%;
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+	animation: loading 3s ease-out infinite;
+  background-color: var(--background-color);
+}
+
+/* I had to duplicate the background properties because they 
+were being disabledif I didn't. I am not sure why. */
+.loading-bar.success {
+  background: linear-gradient(-45deg, var(--color-success), var(--background-color));
+  background-size: 400% 400%;
+  background-position: 200% 0%;
+}
+
+.loading-bar.danger {
+  background: linear-gradient(-45deg, var(--color-danger), var(--background-color));
+  background-size: 400% 400%;
+  background-position: 200% 0%;
+}
+
+.loading-bar.info {
+  background: linear-gradient(-45deg, var(--color-info), var(--background-color));
+  background-size: 400% 400%;
+  background-position: 200% 0%;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
 /* links, anchor tags */
 a {
   --text-color: var(--color-success);
